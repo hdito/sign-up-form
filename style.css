@@ -1,0 +1,124 @@
+html,
+body {
+  height: 100%;
+}
+:root {
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+@font-face {
+  font-family: "logo";
+  src: url(Norse-Bold.otf);
+}
+.form {
+  box-shadow: 0 5px 5px lightgray, 0 -5px 5px lightgray;
+}
+
+.image {
+  background-image: url(/image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-width: 150px;
+}
+#container {
+  display: flex;
+  min-height: 100%;
+}
+.picture {
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+.form-block {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.caption {
+  position: absolute;
+  bottom: 10px;
+  margin: 0 auto;
+  color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.caption > a {
+  color: white;
+}
+
+.form-block > div:nth-child(1) {
+  flex: 1;
+}
+.form-block > div:nth-child(1) > p {
+  margin: 0;
+  position: absolute;
+}
+.form-block > div:nth-child(2) {
+  flex: 2;
+}
+.form-block > div:nth-child(3) {
+  flex: 1;
+}
+.form-block a {
+  color: #596d48;
+}
+.form-block button {
+  background-color: #596d48;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-left: 32px;
+  border: none;
+}
+input {
+  display: block;
+  border: lightgray solid 2px;
+  border-radius: 4px;
+}
+form > div {
+  display: flex;
+  margin: 32px;
+}
+form > div > label {
+  margin-right: 32px;
+}
+h2 {
+  margin-left: 32px;
+}
+h4 {
+  margin-left: 32px;
+}
+input:focus-visible {
+  border: 2px solid lightskyblue;
+  outline: none;
+}
+.logo {
+  position: absolute;
+  top: 25%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  box-sizing: border-box;
+  font-family: logo, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+}
+.logo > div:nth-child(2) {
+  margin: 16px;
+  font-size: 3rem;
+}
+.logo-image {
+  background-image: url(/odin-lined.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scaleX(-1);
+  height: 50%;
+  width: 25%;
+}
